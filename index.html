@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* 渐变颜色 */
+        /* linear-gradient(rgb(247, 225, 184), rgb(197, 191, 228), rgb(147, 215, 255) */
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100vw;
+            min-height: 100vh;
+            background: linear-gradient(rgb(247, 225, 184), rgb(197, 191, 228), rgb(147, 215, 255));
+        }
+        
+        .container {
+            position: relative;
+            width: 1200px;
+            height: 700px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+            opacity: 50;
+        }
+        
+        .big {
+            position: absolute;
+            left: 4%;
+            top: 4%;
+            width: 95%;
+            height: 92%;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .left,
+        .center,
+        .right,
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6,
+        .rightbox1,
+        .rightbox2,
+        .rightbox3,
+        .rightbox4 {
+            border: 2px solie #ccc;
+            border-radius: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        ul li {
+            display: block;
+            list-style: none;
+            margin: 30px 30px 20px 15px;
+            padding: 11px;
+            width: 90%;
+            border: 1px solid rgb(231, 231, 231);
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        
+        ul li:nth-child(1) {
+            margin-top: 70px;
+        }
+        
+        ul li:hover {
+            background: linear-gradient(to right, rgb(197, 191, 228), rgb(147, 215, 255));
+        }
+        
+        ul li a:hover {
+            color: rgb(253, 250, 250);
+        }
+        
+        .box1:hover,
+        .box2:hover,
+        .box3:hover,
+        .box4:hover,
+        .box5:hover,
+        .box6:hover {
+            background: linear-gradient(to left, rgb(197, 191, 228), rgb(155, 215, 250));
+        }
+        /* 右边毛玻璃盒子 */
+        
+        right {
+            position: relative;
+        }
+        
+        .rightbox {
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.2);
+            opacity: 100;
+            backdrop-filter: blur(20px);
+        }
+        /* .rightbox1 {
+            top: 2px;
+        }
+        
+        .rightbox2 {
+            top: 100px;
+        }
+        
+        .rightbox3 {
+            top: 200px;
+        }
+        
+        .rightbox4 {
+            top: 300px;
+        } */
+        /* 右边有颜色的盒子 */
+        
+        .Right {
+            position: absolute;
+            right: 20px;
+            border-radius: 15px;
+            opacity: 60;
+        }
+        
+        .rightbox11 {
+            top: 30px;
+            background: rgb(148, 160, 250);
+        }
+        
+        .rightbox22 {
+            top: 180px;
+            background: rgb(252, 155, 184);
+        }
+        
+        .rightbox33 {
+            top: 330px;
+            background: rgb(251, 193, 117);
+        }
+        
+        .rightbox44 {
+            top: 480px;
+            background: rgb(203, 156, 252);
+        }
+        /* .rightbox1:hover,
+        .rightbox2:hover,
+        .rightbox3:hover,
+        .rightbox4:hover {
+            background: linear-gradient( rgb(197, 191, 228), rgb(155, 215, 250));
+        } */
+        
+        @media screen and (max-width:760px) {
+            .left {
+                display: none;
+            }
+            .right {
+                display: none;
+            }
+            .center {
+                display: none;
+            }
+        }
+        
+        p {
+            position: fixed;
+            top: 40%;
+            font-size: 26px;
+            opacity: 10000;
+        }
+        
+        @media screen and (min-width:760px) {
+            p {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<div class="container">
+    <div class="row big">
+        <!-- 左边 -->
+        <div class=" left col-md-3 ">
+            <ul class="text-lg-center">
+                <li>
+                    <a href="#" class="text-decoration-none ">我的资料</a>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none ">我的资料</a>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none">我的资料</a>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none">我的资料</a>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none">我的资料</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 中间 -->
+        <div class="center col-md-5  mx-md-2">
+            <h3 class="pt-4">毛玻璃渐变彩页面-By Cici</h3>
+            <p class="pl-1">2021-09-25</p>
+            <!-- 中间盒子分布 -->
+
+            <div class="row centerBox">
+                <div class="box1 col-md-5 ml-md-3 mr-md-4 mb-md-4" style=" height: 160px;">1</div>
+                <div class="box2 col-md mr-md-3" style=" height: 160px;">2</div>
+                <div class="box3 col-md-11 mx-md-3" style=" height: 200px;">
+                    <h6 class "computer">该页面暂时请用电脑端查看</h6>
+                </div>
+                <div class="box4 col-md mt-md-4 ml-md-3" style=" height: 100px;">4</div>
+                <div class="box5 col-md-3 mt-md-4 mx-md-3" style=" height: 100px;">5</div>
+                <div class="box6 col-md mt-md-4 mr-md-3" style=" height: 100px;">6</div>
+            </div>
+
+
+        </div>
+
+        <!-- 右边 -->
+        <div class=" right col  ">
+            <div class="row">
+                <div class="Right rightbox11 col-md-9" style=" width:250px; height: 110px;"></div>
+                <div class="rightbox rightbox1 col-md-9 mt-md-5 mb-md-4 ml-md-5" style=" height: 110px;"></div>
+
+                <div class="Right rightbox22 col-md-9 " style="width:250px;  height: 110px;"></div>
+                <div class=" rightbox rightbox2 col-md-9 mb-md-4 mt-md-3 ml-md-5 " style=" height: 110px; "></div>
+
+                <div class="Right rightbox33 col-md-9" style="width:250px;  height: 110px;"></div>
+
+                <div class=" rightbox rightbox3 col-md-9 mb-md-4  mt-md-3 ml-md-5" style=" height: 110px;"></div>
+
+                <div class="Right rightbox44 col-md-9 " style=" width:250px; height: 110px;"></div>
+                <div class=" rightbox rightbox4 col-md-9 mb-md-2  mt-md-3 ml-md-5 " style=" height: 110px; "></div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<p class "computer">该页面暂时请用电脑端查看</p>
+
+<body>
+
+</body>
+
+</html>
